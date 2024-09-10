@@ -2,16 +2,16 @@ package COM.DSA_Searching;
 import javax.sound.sampled.Line;
 import java.util.*;
 /*
-* Linear search is used for finding the element in array.
-* It is very simple but time consuming for large element array.
-* It starts search form index 0 to till end.
-* Time Complexity :
-* best case : O(1)
-*   when the element is find at index no 0;
-* Worst case : O(n)
-*   When the element is find at last index.
-*   when the element is not find in array{-1).
-* */
+ * Linear search is used for finding the element in array.
+ * It is very simple but time consuming for large element array.
+ * It starts search form index 0 to till end.
+ * Time Complexity :
+ * best case : O(1)
+ *   when the element is find at index no 0;
+ * Worst case : O(n)
+ *   When the element is find at last index.
+ *   when the element is not find in array{-1).
+ * */
 
 public class LinearSearch {
     public static void main(String[] args) {
