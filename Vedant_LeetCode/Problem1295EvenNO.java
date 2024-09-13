@@ -6,6 +6,7 @@ public class Problem1295EvenNO {
     public static void main(String[] args) {
         int [] nums ={12,345,2,6,7896};
         System.out.println(findNumbers(nums));
+        System.out.println(digits2(12546));
     }
 
     static int findNumbers(int [] nums){
@@ -32,4 +33,14 @@ public class Problem1295EvenNO {
         }
         return count;
     }
+
+
+    // second way with optimized solution.
+    static int digits2(int num){
+        if(num<0){
+            num=num * -1;
+        }
+        return (int) (Math.log10(num));
+    }
+
 }
