@@ -8,7 +8,7 @@ public class Problem744CeilingOfLetters {
         char target = 'k';
 
         System.out.println(CeilingLetters(letters,target));
-
+//        System.out.println(letters[2]  % letters.length);
     }
     public static char CeilingLetters(char [] letters , char target){
         int start = 0 ;
