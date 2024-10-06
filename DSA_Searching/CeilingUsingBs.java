@@ -22,6 +22,8 @@ public class CeilingUsingBs {
                     return -1;
             }
             else if(arr[mid]==target){
+//                mid = mid+1;
+//                return arr[mid];
                 return arr[mid];
             }
             else if (arr[mid]<target) {
