@@ -17,6 +17,7 @@ public class FloorUsingBs {
             if(arr[0]>target){
                 return  -1;
             }
+
             else if(arr[mid]==target){
                 return arr[mid];
             }
