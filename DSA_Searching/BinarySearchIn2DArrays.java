@@ -2,7 +2,7 @@ package COM.DSA_Searching;
 
 import java.util.Arrays;
 
-//Search in 2D arrays and matrix using Binary Search
+//Search in 2D arrays and matrix using Binary Search.
 public class BinarySearchIn2DArrays {
     public static void main(String[] args) {
         int  [][] matrix={
