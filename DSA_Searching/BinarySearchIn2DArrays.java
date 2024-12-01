@@ -20,6 +20,7 @@ public class BinarySearchIn2DArrays {
         int row =0;
         int col = matrix.length-1;
         while(row<matrix.length && col>=0){
+
             if(target==matrix[row][col]){
                 return new int[]{row,col};
             }
