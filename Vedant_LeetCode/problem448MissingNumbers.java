@@ -6,6 +6,9 @@ import java.util.List;
 
 //Problem Link : https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
 
+// solved with optimized solution
+
+// https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/submissions/1470497438/
 public class problem448MissingNumbers {
 
     public static void main(String[] args) {
