@@ -1,5 +1,8 @@
 package COM.Vedant_LeetCode;
 
+//solution link : https://leetcode.com/problems/binary-search/solutions/6150187/solve-using-java-beats-100-by-vedant_bac-0e5b/
+
+//problem link :https://leetcode.com/problems/binary-search/description/
 public class Problem704_Bs {
     public static void main(String[] args) {
         int [] arr= {-10,-1,0,4,9,52,100};
