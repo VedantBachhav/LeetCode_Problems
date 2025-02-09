@@ -15,19 +15,15 @@ public class Problem3380_BalancedString {
     public static boolean isBalanced(String num) {
         int SumEven =0;
         int SumOdd =0;
-        for(int i = 0;  i<num.length(); i++){
-            if(i%2==0){
-                char ch =num.charAt(i);
+        for(int i = 0;  i<num.length(); i++) {
+            if (i % 2 == 0) {
+                char ch = num.charAt(i);
                 SumEven += ch - '0';
-            }
-            else{
-                char ch =num.charAt(i);
-                SumOdd += ch - '0';
+            } else {
+
+                return false;
             }
         }
-        if(SumOdd==SumEven){
-            return true;
-        }
-        return false;
-    }
+        return true;
 }
+        }
