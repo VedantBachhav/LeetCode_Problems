@@ -4,6 +4,7 @@ import java.util.*;
 //Problem Link :https://leetcode.com/problems/squares-of-a-sorted-array/?envType=problem-list-v2&envId=prshgx6i
 
 //Solution Link all solutions are attached in java file with three different approach
+//https://leetcode.com/problems/squares-of-a-sorted-array/solutions/6437738/beats-100-java-solution-with-brute-force-t0c4/
 public class Problem977SquareOfSortedArray {
     public static void main(String[] args) {
         int [] arr = {-7,-3,2,3,11};
@@ -34,7 +35,7 @@ public class Problem977SquareOfSortedArray {
         //     }
 
 
-//       Brue force 2 : approch used sort method so beats only 13 ms O(nlogn)
+//       Brute force 2 : approch used sort method so beats only 13 ms O(nlogn)
      Arrays.sort(arr);
 
 
