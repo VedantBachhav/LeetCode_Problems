@@ -31,12 +31,17 @@ public class LinkedList {
 
         Node(int data) {
             this.data = data;
-            this.next = null;
+
+        }
+        Node(int data , Node next){
+            this.data = data;
+            this.next = next;
         }
     }
 
     public static Node tail;
     public static Node head;
+    public static int size =0;
 
 
     // kk code
@@ -61,6 +66,7 @@ public class LinkedList {
         } else {
             newNode.next = head;
             head = newNode;
+            size++;
         }
     }
 
@@ -72,8 +78,33 @@ public class LinkedList {
             }
             tail.next = newNode;
             tail = newNode;
+            size++;
         }
 
+    public void insertMiddle(int data, int index){
+        if(index < 0 || index > size){
+            System.out.println("Index out of bounds");
+            return;
+        }
+
+        if(index == 0){
+            addFirst(data);
+            return;
+        }
+        if(size==index){
+            addLast(data);
+            return ;
+        }
+
+        Node temp = head;
+        for(int i =1; i<index; i++){
+            temp= temp.next;
+        }
+        Node newNode = new Node(data, temp.next);
+        temp.next = newNode;
+        size++;
+
+    }
         public static void print() {
             Node temp = head;
             // base case but not needed
@@ -99,6 +130,8 @@ public class LinkedList {
         ll.addLast(3);
         ll.print();
         ll.addLast(4);
+        ll.print();
+        ll.insertMiddle(4,0);
         ll.print();
     }
 }
