@@ -14,19 +14,18 @@ class Solution {
         ListNode headSecond = reverseList(mid);
         ListNode RevHead = headSecond;
 
-        while(head != null && headSecond != null) 
-        {
-            if(head.val != headSecond.val){
+       while (headSecond != null) {
+            if (head.val != headSecond.val) {
+                reverseList(RevHead); 
                 return false;
             }
             head = head.next;
             headSecond = headSecond.next;
         }
-        // reverseList(RevHead);
-        // if(head == null || headSecond == null){
-        //     return true;
-        // }
+
+        reverseList(RevHead); 
         return true;
+
     }
 
     public ListNode findMid(ListNode head){
