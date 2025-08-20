@@ -30,9 +30,9 @@ class Solution {
                 if(curr.left!=null) q.offer(curr.left);
                 if(curr.right!=null) q.offer(curr.right);
             }
-            result.add(list);
+            result.add(0,list);
         }
-        Collections.reverse(result);
+        // Collections.reverse(result);
         return result;
     }
 }
